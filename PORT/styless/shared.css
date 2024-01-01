@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-bg: #ecf2f8;
+  --color-primary-bg2:#c6cdd5;
+  --color-primary-bg3:#89929b;
+  --color-primary-bg4:#21262d;
+  --color-primary-bg5:#161b22;
+  --color-primary-bg6:#0d1117;
+  --color-primary-btn: #4267b2;
+  --color-secondary-p: ;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-text:  #0d1117;
+  --color-orangered: rgb(242, 75, 14);
+  --color-yellow: rgb(255, 252, 84);
+  --color-blueviolet: blueviolet;
+  --color-black:#333;
+  --color-blue: blue;
+  --color-red: red;
+
+}
+
+.dark-theme {
+  --color-primary-bg: #0d1117;
+  --color-shadow: rgba(102, 101, 101, 0.13);
+  /* --color-primary-btn: #ecf2f8 ; */
+  --color-text:  #ecf2f8;
+}
+
+.dark-theme i:hover {
+  cursor: pointer;
+}
+
+.themeIcon {
+  font-size: 16px;
+  /* color: var(--color-danger); */
+}
+
+html,
+body {
+  color: var(--color-text);
+  background-color: var(--color-primary-bg);
+  scroll-behavior:  smooth;
+  position: relative;
+}
+
+p{
+  color: var(--color-secondary-p);
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+i {
+  color: var(--color-primary4);
+}
+i:hover {
+  color: var(--color-primary);
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section{
+  overflow: hidden;
+}
+
+section .animate{
+  filter: blur(5px);
+  transition: 1.8s;
+  opacity: 0;
+
+}
+
+section.show-animate .animate{
+  opacity: 1;
+  filter: blur(0);
+}
+
+section h2 {
+  font-size: 36px;
+  color: var(--color-danger);
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+.row {
+  max-width: 990;
+  margin: 0 auto;
+  padding:  4rem;
+}
+
+/* styling nav */
+.window-scroll {
+  background: var(--color-primary-bg);
+  transition: var(--transition);
+  opacity: 1;
+  color: var(--color-primary);
+  border-bottom: .5px solid var(--color-text);
+  box-shadow: 0 1rem 2rem var(--color-shadow);
+}
+
+.nav {
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  padding: 0 2rem;
+}
+
+.open-icon {
+  font-size: 1.8rem;
+  display: none;
+}
+
+.phone-logo {
+  display: none;
+}
+
+.menu-links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.menu-links a {
+  font-size: 1.2rem;
+}
+
+.menu-links a:hover {
+  padding-bottom: .1rem;
+}
+
+.nav-container {
+  display: flex;
+  padding: 0 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials-container {
+  font-size: 30px;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials-container > i {
+  cursor: pointer;
+}
+
+.close-btn {
+  display: none;
+  font-size: 3rem;
+}
+
+/* styling hero section */
+
+.h-container {
+  padding: 1.8rem 0;
+}
+
+.hero-sec .animate{
+    transform: translate(100%);
+}
+
+.hero-sec.show-animate  .animate{
+  transform: translate(0);
+}
+
+.hero-text {
+  font-size: 44px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-btn {
+  padding: 0.8rem 2.5rem;
+  font-size: 16px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background-color:var(--color-primary-bg2);
+  border: 1px solid var(--color-primary-bg2);
+}
+
+.hero-btn a {
+  color: var(--color-primary-btn);
+}
+
+.hero-article > .socials-container {
+  display: none;
+}
+
+.content {
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+.nom {
+  /* font-family: monospace; */
+  color: var(--color-primary-btn);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  max-width: 35%;
+  border-radius: 50%;
+}
+
+.typing-effect {
+  text-transform: capitalize;
+  color: var(--color-danger);
+  white-space: nowrap;
+  overflow: hidden;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+}
+
+.cursor {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  animation: blink 0.7s 3;
+}
+
+
+@keyframes blink {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  50% {
+     background-color: var(--color-danger); 
+  }
+} 

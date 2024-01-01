@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- styles link -->
+        <link rel="stylesheet" href="styless/shared.css">
+        <link rel="stylesheet" href="styless/abt.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="styless/contact.css">
+        <link rel="stylesheet" href="styless/responsive.css">
+
+        <!-- slider css -->
+        <link rel="stylesheet" href="styless/swiper-bundle.min.css">
+
+
+    </head>
+
+    <body id="body">
+
+
+        <nav class="nav window-scroll">
+            <div class="nav-container ">
+                <i class="phone-logo">emessCodes</i>
+                <div class="socials-container">
+                    <i class="fa-brands fa-instagram"><a href=""></a></i>
+                    <i class="fa-brands fa-github"><a href=""></a></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="menu-container df">
+                    <ul class="menu-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+
+                    </ul>
+
+                    <span onclick="openNav()" class="open-icon"> ☰ </span>
+                    <span onclick="closeNav()" class="close-btn">&times;</span>
+                    <i class="fa-solid fa-sun dark-theme themeIcon"></i>
+                </div>
+            </div>
+        </nav>
+
+
+        <main>
+
+            <section id="home" class="h-container hero-sec show-animate">
+                <div class="profile-container row ">
+                    <article class="hero-article">
+
+                        <h1 class="hero-text">Hi, <br> I'm <span class="nom"> Essuon</span> <br> A Ghanaian <br> Based Web Developer </h1>
+                        <p class="content">hey! looking to hire a web developer for your <br> business, let's shake
+                            hands . Dedicated to crafting stand-out and eye-touching projects</p>
+                        <div class="socials-container md-socials  ">
+                            <i class="animate fa-brands fa-instagram" style="--i:0"><a href=""></a></i>
+                            <i class="animate fa-brands fa-github"    style="--i:1"><a href=""></a></i>
+                            <i class="animate fa-brands fa-twitter"   style="--i:2"></i>
+                            <i class="animate fa-brands fa-linkedin"  style="--i:3"></i>
+                        </div>
+                        <button class="hero-btn animate"><a href="#cv">Download CV</a></button>
+                    </article>
+
+                    <img class="profile-pic animate" src="./images/contact-img.jpg" alt="">
+                </div>
+
+                <a href="./000.html ">
+                    <div class="typing-effect" id="textEffect"> <span class="cursor" id="cursor"></span></div>
+                </a>
+
+            </section>
+
+
+            <section id="about" class="row  abt-section">
+                <h2 class="abt-h-title ">About me</h2>
+                <div class="df abt-con-1 ">
+                    <img class="abt-img-1 animate " src="./images/photo_2023-12-07_23-49-18.jpg" alt="">
+                    <article class="art-1 animate ">
+                        <q class="quote ">STAY HUNGRY <br> STAY FOOLISH</q>
+
+                        <p class="p-1">
+                            Hi there, I'm Essuon Emmanuel, an alumnus of Central Hub Tech Cohort 10.
+                            As a hardworking and passionate Software Developer, I'm dedicated to building exceptional
+                            Projects
+                            that leave a lasting impression. With a solid skill set in HTML, CSS and intermediate
+                            Knowledge of JavaScript and
+                            React. I'm ready to build ideas from zero. I believe in constant growth and staying
+                            up-to-date with the latest
+                            Technologies in the Software development space.
+                            Let's collaborate an create something Extraordinary together.
+                            <button onclick="displayMore()" class="vm-btn js-vm-btn">
+                                <p class="js-btn-content">read more</p>
+                                <span class="abt-view-more js-vm-content">
+                                    <p class="p-1">
+
+                                        I'm driven by a popular slogan by Steve Jobs the man behind Apple success and it
+                                        goes like this
+                                        "STAY FOOLISH STAY HUNGRY". That's why i invest vast amount of time and effort
+                                        into acquiring
+                                        new skills and staying current with the ever-changing demands of this industry.
+                                        I'm committed to continuous learning and growth. Let's embark on this journey
+                                        together and
+                                        create remarkable experiences that push boundaries.
+
+                                        I am focused on delivering an exceptional results and working collaboratively
+                                        with any team to
+                                        achieve our shared goals. Thank you for visiting my portfolio. I look forward to
+                                        connecting with you
+                                        and exploring exciting opportunities together. Thank You !!
+                                    </p>
+
+                                    <!-- <p class="js-btn-less vl "> View Less</p>   -->
+                                </span>
+
+                            </button>
+                        </p>
+
+
+
+                    </article>
+                </div>
+
+            </section>
+           
+
+            <!-- Skills Sections markup  -->
+            <section id="skills" class="skill-sec">
+                <div class="skill">
+                    <div class="skill-container row  ">
+                        <h2>My Skills</h2>
+                        <div class="skills  js-skill-container animate"> </div>
+                    </div>
+
+            </section>
+
+
+            <!-- Projects Sections markup  -->
+            <section id="project" class="project-sec">
+                <div class="projects-container row ">
+                    <h2>Projects And Clones</h2>
+                    <div class="swiper mySwiper project-wrapper animate">
+                        <div class="project-card-container  js-pro-container swiper-wrapper ">
+
+                        </div>
+
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <!-- Contact Sections markup  -->
+            <section id="contact" class="row  cnt-sec">
+                <div class="contact-sec">
+                    <h2>Contact</h2>
+                    <div class="contact__container animate">
+
+                        <aside class="contact__aside">
+                            <div class="aside__img">
+                                <img class="contact-img" src="./IMAGES/contact-img.jpg" alt="">
+                            </div>
+                            <h2>Contact Me</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Autem eum cumque, beatae ipsa libero excepturi maxime!
+
+                            </p>
+                            <ul class="contact__details">
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <h5>+233550862954</h5>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <h3>essuonemma84@gmail.com</h3>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location"></i>
+                                    <h5>Accra,Ghana</h5>
+                                </li>
+                            </ul>
+
+                            <ul class="contact__socials animate">
+                                <li>
+                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin.com"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                            </ul>
+
+                        </aside>
+
+                        <form action="">
+                            <div class="form__name">
+                                <input type="text" name="First Name" placeholder="First Name" required>
+                                <input type="text" name="Last Name" placeholder="Last Name" required>
+                            </div>
+                            <input type="email" name="Email Address" placeholder="Your Email Address" required>
+                            <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn btn-primary"> Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section id="faq" class="faq-sec">
+                <div class="faqs-main-container row animate">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faqs-container js-faqs-container ">         
+                    </div>
+                    <strong id="Home" class="arr-up"> <a href="./000.html">&UpArrow;</a> </strong>
+
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content">
+                    <strong> &copy;emess2ghCodes @2024</strong>
+                </div>
+
+            </footer>
+        </main>
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"> </script>
+
+
+
+    </body>
+
+</html>
